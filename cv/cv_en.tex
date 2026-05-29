@@ -1,0 +1,135 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{array}
+
+\geometry{left=1.35cm,right=1.35cm,top=1.15cm,bottom=1.15cm}
+\definecolor{primary}{HTML}{0F172A}
+\definecolor{accent}{HTML}{0369A1}
+\definecolor{muted}{HTML}{475569}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\setlist[itemize]{leftmargin=*, topsep=2pt, itemsep=2pt}
+\titleformat{\section}{\large\bfseries\color{primary}}{}{0pt}{}[\vspace{-3pt}\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{5pt}
+
+\newcommand{\cvtag}[1]{\fcolorbox{accent!25}{accent!6}{\strut\footnotesize #1}}
+\newcommand{\entry}[4]{
+  \textbf{#1} \hfill {\small\color{muted} #2}\\
+  {\color{accent}#3}\\[-2pt]
+  #4
+}
+
+\begin{document}
+
+{\Huge\bfseries Abdelkoddouss El Fadili}\\[3pt]
+{\large Computer Engineering Student | Full-stack, ML/DL and Agentic AI}\\[6pt]
+Morocco \quad | \quad
+\href{mailto:abdoelfadili695@gmail.com}{abdoelfadili695@gmail.com} \quad | \quad
++212 608 568 400 \quad | \quad
+\href{https://github.com/abdoelfadili}{github.com/abdoelfadili} \quad | \quad
+\href{https://www.linkedin.com/in/abdelkoddouss-elfadili/}{linkedin.com/in/abdelkoddouss-elfadili}
+
+\section*{Profile}
+Computer engineering student focused on full-stack development, mobile applications, Machine Learning, Deep Learning and Agentic AI. I build useful software with robust APIs, clean interfaces, well-structured databases and strong attention to maintainability, security and product value.
+
+\section*{Core Skills}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{3.2cm} X}
+Languages & Java, Python, C, C++, C\#, Dart, PL/SQL \\
+Web / Backend & React.js, Laravel, Spring Boot, ASP.NET, HTML, CSS, JavaScript, REST API architecture \\
+Mobile & Flutter, API integration, local storage, mobile workflows \\
+Data & MySQL, Oracle, SQLite, data modeling, queries, relational schemas \\
+AI & Machine Learning, Deep Learning, Agentic AI, evaluation, automation, assistants, recommendations \\
+Tools / Methods & Git, Docker, VS Code, Postman, Figma, UML, Merise, Agile/SCRUM, application security \\
+\end{tabularx}
+
+\section*{Professional Experience}
+\entry{Final-year internship -- Mobile Development}{April -- May 2023}{SPS Technologie}{
+\begin{itemize}
+  \item Developed a Flutter mobile application connected to a Laravel API for order and delivery management.
+  \item Integrated APIs, handled real-time data flows and implemented dynamic filters.
+  \item Contributed to clearer mobile workflows for operational tracking.
+\end{itemize}
+}
+
+\entry{Observation internship -- IT Maintenance and Web}{July 2023}{Abattoirs de Casablanca}{
+\begin{itemize}
+  \item Performed computer maintenance, workstation setup and user support.
+  \item Worked on hardware diagnostics, network configuration and static website creation.
+\end{itemize}
+}
+
+\section*{Selected Projects}
+\entry{School Management Platform}{2022 -- 2024}{Laravel, React, MySQL}{
+\begin{itemize}
+  \item Complete web application to centralize users, courses, classes, grades and schedules.
+  \item Role-based management for administrators, teachers and students with structured CRUD modules.
+  \item Impact: clearer administrative workflow and better data traceability.
+\end{itemize}
+}
+
+\entry{Volunteer Platform API}{2023 -- 2024}{Laravel, Docker, MySQL, GitHub}{
+\begin{itemize}
+  \item REST API to manage missions, volunteers, organizations and association workflows.
+  \item Authentication, business endpoints and reproducible Docker environment.
+  \item Impact: backend ready to connect with a web or mobile client.
+\end{itemize}
+}
+
+\entry{Library Management System}{2023 -- 2024}{Laravel, Docker, GitHub}{
+\begin{itemize}
+  \item Structured backend for catalog, users, loans and returns.
+  \item Reduced manual tracking errors and prepared the architecture for a modern interface.
+\end{itemize}
+}
+
+\entry{Java File Encryption Application}{2022 -- 2024}{Java, JavaFX, RSA}{
+\begin{itemize}
+  \item Desktop application to encrypt and decrypt files using RSA.
+  \item Simple interface with key generation and local file management.
+\end{itemize}
+}
+
+\entry{Mobile Meal Planning Assistant}{2023 -- 2024}{Flutter, SQLite, AI}{
+\begin{itemize}
+  \item Mobile application with local storage and intelligent weekly meal plan suggestions.
+  \item Demonstrates applied AI for an everyday need with product logic and user preferences.
+\end{itemize}
+}
+
+\section*{Education}
+\entry{Engineering Cycle in Computer Science}{2024 -- Present}{ENIAD -- Mohammed Premier University}{
+Advanced training in software development, architecture, systems, databases and emerging technologies.
+}
+
+\entry{DUT in Computer Science}{2022 -- 2024}{EST Guelmim}{
+Strong foundations in programming, software design, databases and applied projects.
+}
+
+\section*{Strengths}
+\cvtag{Full-stack} \quad
+\cvtag{REST APIs} \quad
+\cvtag{Flutter} \quad
+\cvtag{Databases} \quad
+\cvtag{Machine Learning} \quad
+\cvtag{Deep Learning} \quad
+\cvtag{Agentic AI} \quad
+\cvtag{Docker}
+
+\end{document}

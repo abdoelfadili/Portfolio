@@ -1,0 +1,135 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{array}
+
+\geometry{left=1.35cm,right=1.35cm,top=1.15cm,bottom=1.15cm}
+\definecolor{primary}{HTML}{0F172A}
+\definecolor{accent}{HTML}{0369A1}
+\definecolor{muted}{HTML}{475569}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\setlist[itemize]{leftmargin=*, topsep=2pt, itemsep=2pt}
+\titleformat{\section}{\large\bfseries\color{primary}}{}{0pt}{}[\vspace{-3pt}\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{5pt}
+
+\newcommand{\cvtag}[1]{\fcolorbox{accent!25}{accent!6}{\strut\footnotesize #1}}
+\newcommand{\entry}[4]{
+  \textbf{#1} \hfill {\small\color{muted} #2}\\
+  {\color{accent}#3}\\[-2pt]
+  #4
+}
+
+\begin{document}
+
+{\Huge\bfseries Abdelkoddouss El Fadili}\\[3pt]
+{\large Élève ingénieur en génie informatique | Full-stack, ML/DL et IA agentique}\\[6pt]
+Maroc \quad | \quad
+\href{mailto:abdoelfadili695@gmail.com}{abdoelfadili695@gmail.com} \quad | \quad
++212 608 568 400 \quad | \quad
+\href{https://github.com/abdoelfadili}{github.com/abdoelfadili} \quad | \quad
+\href{https://www.linkedin.com/in/abdelkoddouss-elfadili/}{linkedin.com/in/abdelkoddouss-elfadili}
+
+\section*{Profil}
+Élève ingénieur en génie informatique, orienté développement full-stack, mobile, Machine Learning, Deep Learning et IA agentique. Je construis des applications utiles avec des API robustes, des interfaces lisibles, des bases de données bien structurées et une attention forte à la maintenabilité, la sécurité et la valeur produit.
+
+\section*{Compétences clés}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{3.2cm} X}
+Langages & Java, Python, C, C++, C\#, Dart, PL/SQL \\
+Web / Backend & React.js, Laravel, Spring Boot, ASP.NET, HTML, CSS, JavaScript, architecture API REST \\
+Mobile & Flutter, intégration API, stockage local, parcours mobiles \\
+Données & MySQL, Oracle, SQLite, modélisation, requêtes, schémas relationnels \\
+IA & Machine Learning, Deep Learning, Agentic AI, évaluation, automatisation, assistants, recommandations \\
+Outils / Méthodes & Git, Docker, VS Code, Postman, Figma, UML, Merise, Agile/SCRUM, sécurité applicative \\
+\end{tabularx}
+
+\section*{Expériences professionnelles}
+\entry{Stage de fin d'étude -- Développement mobile}{Avril -- Mai 2023}{SPS Technologie}{
+\begin{itemize}
+  \item Développement d'une application mobile Flutter connectée à une API Laravel pour la gestion des commandes et livraisons.
+  \item Intégration d'API, gestion de données en temps réel et mise en place de filtres dynamiques.
+  \item Contribution à des parcours mobiles plus clairs pour le suivi opérationnel.
+\end{itemize}
+}
+
+\entry{Stage d'observation -- Maintenance et web}{Juillet 2023}{Abattoirs de Casablanca}{
+\begin{itemize}
+  \item Maintenance informatique, installation de postes et support utilisateur.
+  \item Diagnostic matériel, configuration réseau et création d'un site web statique.
+\end{itemize}
+}
+
+\section*{Projets sélectionnés}
+\entry{Plateforme de gestion d'école}{2022 -- 2024}{Laravel, React, MySQL}{
+\begin{itemize}
+  \item Application web complète pour centraliser utilisateurs, cours, classes, notes et emplois du temps.
+  \item Gestion des rôles administrateur, enseignant et élève avec CRUD structurés.
+  \item Impact : workflow administratif plus clair et meilleure traçabilité des données.
+\end{itemize}
+}
+
+\entry{API de plateforme de bénévoles}{2023 -- 2024}{Laravel, Docker, MySQL, GitHub}{
+\begin{itemize}
+  \item API REST pour gérer missions, bénévoles, organisations et workflows associatifs.
+  \item Authentification, endpoints métier et environnement Docker reproductible.
+  \item Impact : backend prêt à être connecté à une application web ou mobile.
+\end{itemize}
+}
+
+\entry{Système de gestion de bibliothèque}{2023 -- 2024}{Laravel, Docker, GitHub}{
+\begin{itemize}
+  \item Backend structuré pour catalogue, utilisateurs, prêts et retours.
+  \item Réduction des erreurs manuelles et architecture prête pour une interface moderne.
+\end{itemize}
+}
+
+\entry{Application Java de chiffrement de fichiers}{2022 -- 2024}{Java, JavaFX, RSA}{
+\begin{itemize}
+  \item Application desktop pour chiffrer et déchiffrer des fichiers avec RSA.
+  \item Interface simple avec génération de clés et gestion de fichiers locaux.
+\end{itemize}
+}
+
+\entry{Assistant mobile pour organisation des repas}{2023 -- 2024}{Flutter, SQLite, IA}{
+\begin{itemize}
+  \item Application mobile avec stockage local et suggestions intelligentes de plans de repas.
+  \item Démonstration d'IA appliquée à un besoin quotidien avec logique produit et préférences utilisateur.
+\end{itemize}
+}
+
+\section*{Formation}
+\entry{Cycle d'ingénierie en génie informatique}{2024 -- En cours}{ENIAD -- Université Mohammed Premier}{
+Formation avancée en développement logiciel, architecture, systèmes, bases de données et technologies émergentes.
+}
+
+\entry{DUT en génie informatique}{2022 -- 2024}{EST Guelmim}{
+Bases solides en programmation, conception, bases de données et projets applicatifs.
+}
+
+\section*{Points forts}
+\cvtag{Full-stack} \quad
+\cvtag{API REST} \quad
+\cvtag{Flutter} \quad
+\cvtag{Bases de données} \quad
+\cvtag{Machine Learning} \quad
+\cvtag{Deep Learning} \quad
+\cvtag{IA agentique} \quad
+\cvtag{Docker}
+
+\end{document}

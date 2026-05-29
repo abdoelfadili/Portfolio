@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy:check": "npm run lint && npm run build",
+    "build:github": "GITHUB_PAGES=true vite build"
   },
   "dependencies": {
     "lucide-react": "^0.552.0",
@@ -32,9 +34,15 @@
     "typescript-eslint": "^8.45.0",
     "vite": "^5.0.0"
   },
-  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
-  "main": "eslint.config.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "description": "Portfolio bilingue de Abdelkoddouss El Fadili, orienté full-stack, ML/DL et Agentic AI.",
+  "keywords": [
+    "portfolio",
+    "react",
+    "full-stack",
+    "machine-learning",
+    "deep-learning",
+    "agentic-ai"
+  ],
+  "author": "Abdelkoddouss El Fadili",
+  "license": "MIT"
 }
